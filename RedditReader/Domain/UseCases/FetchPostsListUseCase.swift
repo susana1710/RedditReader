@@ -14,7 +14,7 @@ class FetchPostsListUseCase {
     self.postsRepository = postsRepository
   }
   
-  func execute(completion: @escaping (Result<[Post], Error>) -> Void) {
-    return postsRepository.fetchPostsList(completion: completion)
+  func execute() async -> Result<[Post], Error> {
+    return await postsRepository.fetchPostsList()
   }
 }

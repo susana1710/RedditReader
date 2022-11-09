@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       let initialViewController = navigationController.topViewController as? PostListViewController
       else { return }
     // FIXME: Refactor
-    let postListRepository = PostsRepository()
+    let postListRepository = PostsRepository(dataSource: RemotePostDataSource())
     let fetchPostListUseCase = FetchPostsListUseCase(postsRepository: postListRepository)
     let postListViewModdel = PostListViewModel(fetchPostsListUseCase: fetchPostListUseCase)
     initialViewController.postListTableViewModel = postListViewModdel

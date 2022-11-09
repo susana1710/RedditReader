@@ -30,40 +30,26 @@ class PostListService {
   private static let host = "https://www.reddit.com"
   private static let path = "/top.json"
   
-  public func fetchPostList(afterListing: String, completion: @escaping PostListDataCompletion) {
+  public func fetchPostList(afterListing: String) async -> Result<([Post],String), Error> {
     let parameters: Parameters = [
       "after": afterListing
     ]
-    AF.request("\(PostListService.host)\(PostListService.path)", parameters: parameters)
+    let dataTask = AF.request("\(PostListService.host)\(PostListService.path)", parameters: parameters)
         .validate(statusCode: 200..<300)
-        .validate(contentType: ["application/json"])
-        .responseData { [weak self] response in
-          
-          guard let self = self else { return }
-          
-            switch response.result {
-            case .success:
-              guard let data = response.data else {
-                print("Error fetching Post List: No Data")
-                completion(nil, PostListFetchError.noData)
-                return
-              }
-              do {
-                let json = try JSON(data: data)
-                let parsedJSON = self.getPostListFromJSON(json)
-                var parseError: PostListFetchError?
-                if let error = parsedJSON.error {
-                  parseError = PostListFetchError.invalidData(error)
-                }
-                completion(parsedJSON.data, parseError)
-              } catch let error {
-                completion(nil, PostListFetchError.invalidData(error))
-              }
-            case let .failure(error):
-              print("Error fetching Post List: \(error)")
-              completion(nil, PostListFetchError.failedRequest)
-            }
-        }
+        .validate(contentType: ["application/json"]).serializingDecodable(JSON.self)
+    
+    let result = await dataTask.result
+    switch result {
+    case .success(let json):
+      let parsedJSON = self.getPostListFromJSON(json)
+      guard let posts = parsedJSON.data.posts,
+            let lastListingId = parsedJSON.data.lastListingId else {
+        return .failure(PostListFetchError.invalidData(parsedJSON.error!))
+      }
+      return .success((posts, lastListingId))
+    case .failure(let error):
+      return .failure(error)
+    }
   }
   
   //FIXME: Refactor

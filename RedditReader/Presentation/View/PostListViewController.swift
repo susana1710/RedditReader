@@ -23,8 +23,9 @@ class PostListViewController: UIViewController {
     postsTableView.delegate = self
     postsTableView.prefetchDataSource = self
     bindTableViewModel()
-    postListTableViewModel.fetchPosts()
-    //postsTableView.delegate = self
+    Task {
+      await postListTableViewModel.fetchPosts()
+    }
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -44,7 +45,9 @@ class PostListViewController: UIViewController {
       guard let self = self else { return }
       if !fetchInProgress {
         self.postListTableViewModel?.postListResult.bind { _ in
-          self.postsTableView.reloadData()
+          DispatchQueue.main.async {
+            self.postsTableView.reloadData()
+          }
         }
       }
     }
@@ -84,6 +87,8 @@ extension PostListViewController: UITableViewDelegate {
 
 extension PostListViewController: UITableViewDataSourcePrefetching {
   func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-    postListTableViewModel.fetchPosts()
+    Task {
+      await postListTableViewModel.fetchPosts()
+    }
   }
 }

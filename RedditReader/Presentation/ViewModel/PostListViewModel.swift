@@ -18,26 +18,22 @@ public class PostListViewModel {
     self.fetchPostsListUseCase = fetchPostsListUseCase
   }
   
-  func fetchPosts() {
+  func fetchPosts() async {
     guard !fetchInProgress.value else { return }
     fetchInProgress.value = true
+    let fetchPostsListUseCaseResult = await fetchPostsListUseCase.execute()
     
-    fetchPostsListUseCase.execute { result in
-      switch result {
-      case .success(let posts):
-        var postViewModels = [PostViewModel]()
-        for post in posts {
-          let postViewModel = self.createPostViewModel(post: post)
-          postViewModels.append(postViewModel)
-        }
-        DispatchQueue.main.async {
-          self.postListResult.value.append(contentsOf: postViewModels)
-          self.fetchInProgress.value = false
-        }
-      case .failure(let error):
-        print("Error fetching posts: \(error.localizedDescription)")
+    switch fetchPostsListUseCaseResult {
+    case .success(let posts):
+      var postViewModels = [PostViewModel]()
+      for post in posts {
+        let postViewModel = self.createPostViewModel(post: post)
+        postViewModels.append(postViewModel)
       }
-      
+      self.postListResult.value.append(contentsOf: postViewModels)
+      self.fetchInProgress.value = false
+    case .failure(let error):
+      print("Error fetching posts: \(error.localizedDescription)")
     }
   }
   

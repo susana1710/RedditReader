@@ -87,86 +87,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9230F489-28F0-4FDD-880C-9749A0299C2C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RedditReader/Services/PostListService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "fetchPostList(afterListing:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "03943E68-503E-48A8-87E3-5D89C7C81856"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RedditReader/Services/PostListService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "fetchPostList(afterListing:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0ECD69AD-1AE7-488C-BE85-DF415FB8E390"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RedditReader/Services/PostListService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "fetchPostList(afterListing:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CC81F607-1197-419C-97DD-BB6AD4214061"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RedditReader/Services/PostListService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "fetchPostList(afterListing:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6B2E86A3-7E57-443C-A1F5-FA74D9ACF1C9"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RedditReader/Services/PostListService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "fetchPostList(afterListing:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "B779715E-AD66-42BB-A409-25D6E5884357"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -183,38 +103,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FD362DE3-716B-471D-99F9-6E0B041EFEC4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RedditReader/Services/PostListService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "fetchPostList(afterListing:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3FAF9369-0A21-4F9E-97D0-8776BF09D8E0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RedditReader/Services/PostListService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "fetchPostList(afterListing:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "918BD82E-5878-46A7-96CD-7BA511E5B027"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -222,8 +110,8 @@
             filePath = "RedditReader/Services/PostListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "getPostListFromJSON(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,8 +126,8 @@
             filePath = "RedditReader/Services/PostListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "getPostListFromJSON(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -254,8 +142,8 @@
             filePath = "RedditReader/Services/PostListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "getPostListFromJSON(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -270,8 +158,8 @@
             filePath = "RedditReader/Services/PostListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "getPostListFromJSON(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -286,8 +174,8 @@
             filePath = "RedditReader/Services/PostListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "getPostListFromJSON(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -344,7 +232,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "44084AD2-C6AA-4BF4-BF12-E0048E239EBE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RedditReader/SceneDelegate.swift"
@@ -354,6 +242,85 @@
             endingLineNumber = "29"
             landmarkName = "scene(_:willConnectTo:options:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46878E66-8363-49B1-88F5-38EE5C903F01"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RedditReader/Services/PostListService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchPostList(afterListing:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2BF2655-F027-44AB-91AA-062C0B3AB21C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RedditReader/Data/DataSource/Network/RemotePostDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "getPosts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D2BF2655-F027-44AB-91AA-062C0B3AB21C - e5a9f630e8b86256"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for RedditReader.RemotePostDataSource.getPosts() async -&gt; Swift.Result&lt;Swift.Array&lt;RedditReader.Post&gt;, Swift.Error&gt;"
+                  moduleName = "RedditReader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/susana/Code%20Challenges/TheGrint/RedditReader/RedditReader/Data/DataSource/Network/RemotePostDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "63">
+               </Location>
+               <Location
+                  uuid = "D2BF2655-F027-44AB-91AA-062C0B3AB21C - e472f3e101f639e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for RedditReader.RemotePostDataSource.getPosts() async -&gt; Swift.Result&lt;Swift.Array&lt;RedditReader.Post&gt;, Swift.Error&gt;"
+                  moduleName = "RedditReader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/susana/Code%20Challenges/TheGrint/RedditReader/RedditReader/Data/DataSource/Network/RemotePostDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "D2BF2655-F027-44AB-91AA-062C0B3AB21C - aba3e6b207972654"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for RedditReader.RemotePostDataSource.getPosts() async -&gt; Swift.Result&lt;Swift.Array&lt;RedditReader.Post&gt;, Swift.Error&gt;"
+                  moduleName = "RedditReader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/susana/Code%20Challenges/TheGrint/RedditReader/RedditReader/Data/DataSource/Network/RemotePostDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "98">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

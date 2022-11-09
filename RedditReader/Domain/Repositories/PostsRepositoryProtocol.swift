@@ -8,5 +8,5 @@
 import Foundation
 
 protocol PostsRepositoryProtocol {
-  func fetchPostsList(completion: @escaping (Result<[Post], Error>) -> Void)
+  func fetchPostsList() async -> Result<[Post], Error>
 }
