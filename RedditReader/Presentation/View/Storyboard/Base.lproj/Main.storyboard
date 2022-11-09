@@ -59,13 +59,12 @@
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="My Reddit Post Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIT-BA-8wj">
                                                             <rect key="frame" x="157.33333333333337" y="0.0" width="195.66666666666663" height="87"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="yIT-BA-8wj" secondAttribute="bottom" id="ID6-ck-qhd"/>
                                                         <constraint firstItem="yIT-BA-8wj" firstAttribute="top" secondItem="Pju-gK-zhd" secondAttribute="top" id="P8Y-xn-Hu5"/>
                                                     </constraints>
                                                 </stackView>
@@ -156,19 +155,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="RhF-HC-ZKU">
                                 <rect key="frame" x="16" y="185" width="361" height="617"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Reddit Post Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqO-5c-yUd">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="32.333333333333336"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="My Reddit Post Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqO-5c-yUd">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="169.33333333333334"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cs2-Cd-5cb">
-                                        <rect key="frame" x="0.0" y="48.333333333333371" width="361" height="537"/>
+                                        <rect key="frame" x="0.0" y="185.33333333333331" width="361" height="399.99999999999994"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" priority="999" constant="537" id="0Ub-Gb-HUC"/>
+                                            <constraint firstAttribute="height" priority="999" constant="400" id="0Ub-Gb-HUC"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="13 comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Th-a6-qan">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" verticalCompressionResistancePriority="751" text="13 comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Th-a6-qan">
                                         <rect key="frame" x="0.0" y="601.33333333333337" width="361" height="15.666666666666629"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
@@ -177,6 +176,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="999" constant="617" id="V5F-Fm-tN0"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0Th-a6-qan" secondAttribute="bottom" id="afy-cD-W6B"/>
                                     <constraint firstItem="cs2-Cd-5cb" firstAttribute="top" secondItem="uqO-5c-yUd" secondAttribute="bottom" constant="16" id="bdo-L4-G7e"/>
                                     <constraint firstItem="0Th-a6-qan" firstAttribute="top" secondItem="cs2-Cd-5cb" secondAttribute="bottom" constant="16" id="lTH-IA-hld"/>
                                 </constraints>

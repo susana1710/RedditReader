@@ -47,7 +47,7 @@ class CoreDataPostDataSource: PostDataSourceProtocol {
   func createOne(_ post: Post) async -> Result<Bool, Error> {
     do {
       let backgroundContext = container.newBackgroundContext()
-      let postEntity = mapToPostEntity(post: post, context: backgroundContext)
+      _ = mapToPostEntity(post: post, context: backgroundContext)
       try await saveBackgrgoundContext(backgroundContext)
       return .success(true)
     } catch let error {

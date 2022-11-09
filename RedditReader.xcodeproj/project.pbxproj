@@ -132,6 +132,7 @@
 				08E9A700291A01B9002D3E08 /* PostListViewController.swift */,
 				08E9A705291A03F4002D3E08 /* PostDetailViewController.swift */,
 				08E7122C291AF05700EE9935 /* PostTableViewCell.swift */,
+				08E7122B291AEFB500EE9935 /* Storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,7 +237,6 @@
 				081999B2291B538600003E99 /* Data */,
 				081999B1291B531900003E99 /* Presentation */,
 				081999B0291B52EF00003E99 /* Domain */,
-				08E7122B291AEFB500EE9935 /* Storyboard */,
 				08E71226291AA40D00EE9935 /* Services */,
 				08E9A702291A0359002D3E08 /* Utils */,
 				0859AE082919E4FA00AF0618 /* AppDelegate.swift */,
